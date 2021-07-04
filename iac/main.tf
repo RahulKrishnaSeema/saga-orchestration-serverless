@@ -8,7 +8,7 @@ resource "azurerm_resource_group" "sagalogic-resource-group" {
 }
 
 resource "azurerm_eventhub_namespace" "sagalogic-namespace" {
-  name                = "${var.prefix}-ehnamespace"
+  name                = "${var.prefix}-ehnamespacedemorahulkri"
   location            = azurerm_resource_group.sagalogic-resource-group.location
   resource_group_name = azurerm_resource_group.sagalogic-resource-group.name
   sku                 = "Standard"
